@@ -1,0 +1,38 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "ap-northeast-2",
+            "eventTime": "2022-04-13T11:15:49.935Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "A2V6Y2Q7SB49AZ"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "222.119.91.113"
+            },
+            "responseElements": {
+                "x-amz-request-id": "BGGCV1SJ3MZTVFAR",
+                "x-amz-id-2": "7fXr5xjK0Aqh/+DD2mhHohUcuJaLbbFilv/JxMc/Mzeoj2DScFDW9/JJ/fL5QaYrUOPPAN0qFacbN24inRD+DoQaz7Njw2FOP+eQQ1IiAGQ="
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "44dce472-1f00-4ac4-817e-86b6261a8918",
+                "bucket": {
+                    "name": "photo-source-han",
+                    "ownerIdentity": {
+                        "principalId": "A2V6Y2Q7SB49AZ"
+                    },
+                    "arn": "arn:aws:s3:::photo-source-han"
+                },
+                "object": {
+                    "key": "44444.jpg",
+                    "size": 6063,
+                    "eTag": "6626eb5420eb8acfce3d66e62a1280b8",
+                    "sequencer": "006256B0E5E3651C29"
+                }
+            }
+        }
+    ]
+}

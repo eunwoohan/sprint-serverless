@@ -1,0 +1,38 @@
+openapi: "3.0.1"
+info:
+  title: "apigateway-LambdaPutDynamoDB-DBxl4UVmJ6mn-API"
+  description: "Created by AWS Lambda"
+  version: "2022-04-12T13:11:01Z"
+servers:
+- url: "https://jw4ygvup05.execute-api.ap-northeast-2.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "/post"
+paths:
+  /apigateway-LambdaPutDynamoDB-DBxl4UVmJ6mn:
+    post:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+      security:
+      - root4444: []
+      - api_key: []
+components:
+  schemas:
+    Empty:
+      title: "Empty Schema"
+      type: "object"
+  securitySchemes:
+    api_key:
+      type: "apiKey"
+      name: "x-api-key"
+      in: "header"
+    root4444:
+      type: "apiKey"
+      name: "authorizationToken"
+      in: "header"
+      x-amazon-apigateway-authtype: "custom"
